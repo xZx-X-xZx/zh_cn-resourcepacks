@@ -1,0 +1,76 @@
+{
+  "sodium.option_impact.low": "低",
+  "sodium.option_impact.medium": "中",
+  "sodium.option_impact.high": "高",
+  "sodium.option_impact.extreme": "极高",
+  "sodium.option_impact.varies": "可变",
+
+  "sodium.options.pages.quality": "画质",
+  "sodium.options.pages.performance": "性能",
+  "sodium.options.pages.advanced": "高级",
+
+  "sodium.options.view_distance.tooltip": "控制地形渲染的最远距离。较低的值可减少渲染区块数量以提高帧率。",
+  "sodium.options.simulation_distance.tooltip": "控制地形与实体加载更新的范围。较低的值可减轻服务器负担并可能提升帧率。",
+  "sodium.options.brightness.tooltip": "调整世界的最低亮度。调高会使黑暗区域更明亮，但不影响已有光照的区域。",
+  "sodium.options.gui_scale.tooltip": "设置用户界面的最大缩放比例。选择「自动」时始终使用最大适配比例。",
+  "sodium.options.fullscreen.tooltip": "启用后游戏将以全屏模式运行（需系统支持）",
+  "sodium.options.fullscreen_resolution.tooltip": "全屏模式使用的显示器分辨率与刷新率。更改此设置可能影响其他应用程序，并导致切换延迟。\n\n仅Windows系统支持此功能。",
+  "sodium.options.v_sync.tooltip": "将游戏帧率与显示器刷新率同步，提升画面流畅度但会增加输入延迟。在性能不足的设备上可能降低帧率。",
+  "sodium.options.fps_limit.tooltip": "限制最大帧率。有助于降低多任务时的系统负载与功耗。若启用垂直同步，此设置仅在低于刷新率时生效。",
+  "sodium.options.view_bobbing.tooltip": "启用时玩家移动会产生视角晃动。容易晕眩的玩家建议关闭。",
+  "sodium.options.attack_indicator.tooltip": "控制攻击指示器的屏幕显示位置",
+  "sodium.options.autosave_indicator.tooltip": "启用时会在游戏自动保存时显示提示图标",
+  
+  "sodium.options.graphics_quality.tooltip": "基础画质设置，影响部分传统选项及模组兼容性。下方选项设为「默认」时将继承此设置。",
+  "sodium.options.clouds_quality.tooltip": "天空云层的渲染质量。尽管标注为「快速」与「精美」，实际性能影响可忽略。",
+  "sodium.options.weather_quality.tooltip": "控制雨雪等天气效果的可见距离",
+  "sodium.options.leaves_quality.name": "树叶",
+  "sodium.options.leaves_quality.tooltip": "控制树叶显示为透明（精美）或不透明（快速）",
+  "sodium.options.particle_quality.tooltip": "控制屏幕上同时显示的最大粒子数量",
+  "sodium.options.smooth_lighting.tooltip": "启用方块的平滑光照效果。会略微增加区块加载时间，但不影响帧率。",
+  "sodium.options.biome_blend.value": "%s格",
+  "sodium.options.biome_blend.tooltip": "生物群系颜色的平滑过渡距离（方块数）。较高值会显著增加区块加载时间，但画质提升有限。",
+  
+  "sodium.options.entity_distance.tooltip": "实体渲染的距离倍数。较小值减少/较大值增加实体的可见距离",
+  "sodium.options.entity_shadows.tooltip": "为生物等实体渲染基础阴影效果",
+  "sodium.options.vignette.name": "暗角效果",
+  "sodium.options.vignette.tooltip": "在黑暗区域添加画面边缘变暗的视觉效果",
+  "sodium.options.mipmap_levels.tooltip": "控制方块模型纹理的mipmap层级。较高值提升远景渲染质量，但可能影响含大量动画纹理的资源包性能。",
+  
+  "sodium.options.use_block_face_culling.name": "启用方块面剔除",
+  "sodium.options.use_block_face_culling.tooltip": "仅渲染朝向相机的方块面，可大幅提升性能。某些资源包可能导致方块显示异常，此时请关闭此选项。",
+  "sodium.options.use_fog_occlusion.name": "启用迷雾遮挡",
+  "sodium.options.use_fog_occlusion.tooltip": "不渲染被浓雾完全遮挡的区块以提升性能。水下等场景效果显著，但可能导致天空与雾气的交界处出现视觉异常。",
+  "sodium.options.use_entity_culling.name": "启用实体剔除",
+  "sodium.options.use_entity_culling.tooltip": "不渲染位于可视区块外的实体。此优化复用现有区块可见性数据，不会增加系统负担。",
+  
+  "sodium.options.animate_only_visible_textures.name": "仅动画可见纹理",
+  "sodium.options.animate_only_visible_textures.tooltip": "仅更新当前画面中可见的动画纹理。可显著提升重载资源包时的性能，若遇纹理动画异常请关闭此选项。",
+  "sodium.options.cpu_render_ahead_limit.name": "CPU预渲染帧数限制",
+  "sodium.options.cpu_render_ahead_limit.tooltip": "调试专用。控制GPU待处理帧的最大数量。不建议修改，过低或过高都可能导致帧率不稳定。",
+  "sodium.options.cpu_render_ahead_limit.value": "%s帧",
+  
+  "sodium.options.performance_impact_string": "性能影响：%s",
+  "sodium.options.use_persistent_mapping.name": "使用持久化内存映射",
+  "sodium.options.use_persistent_mapping.tooltip": "调试专用。启用后可避免不必要的内存拷贝。排查图形异常时可临时关闭。\n\n需要OpenGL 4.4或ARB_buffer_storage支持。",
+  
+  "sodium.options.chunk_update_threads.name": "区块更新线程数",
+  "sodium.options.chunk_update_threads.tooltip": "控制用于区块构建与排序的线程数量。较多线程可加快加载速度，但可能影响帧稳定性。默认值通常是最佳选择。",
+  "sodium.options.always_defer_chunk_updates.name": "始终延迟区块更新",
+  "sodium.options.always_defer_chunk_updates.tooltip": "即使关键更新也不等待渲染完成。可能提升帧率，但会导致方块显示/消失有明显延迟。",
+  
+  "sodium.options.use_no_error_context.name": "使用无错误上下文",
+  "sodium.options.use_no_error_context.tooltip": "创建OpenGL上下文时禁用错误检查。轻微提升性能，但会加大崩溃问题的调试难度。",
+  
+  "sodium.options.buttons.undo": "撤销",
+  "sodium.options.buttons.apply": "应用",
+  "sodium.options.buttons.donate": "请我们喝咖啡！",
+  
+  "sodium.console.game_restart": "需重启游戏以应用部分视频设置！",
+  "sodium.console.broken_nvidia_driver": "NVIDIA显卡驱动版本过旧！\n  * 将导致严重性能问题与崩溃\n  * 请更新至536.23或更高版本",
+  "sodium.console.core_shaders_error": "以下资源包与Sodium不兼容：",
+  "sodium.console.core_shaders_warn": "以下资源包可能与Sodium不兼容：",
+  "sodium.console.core_shaders_info": "查看游戏日志获取详细信息",
+  "sodium.console.config_not_loaded": "Sodium配置文件损坏或读取失败，部分选项已临时重置为默认值。请打开视频设置界面解决此问题。",
+  "sodium.console.config_file_was_reset": "配置文件已重置为安全默认值"
+}

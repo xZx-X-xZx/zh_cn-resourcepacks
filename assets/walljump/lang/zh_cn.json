@@ -1,0 +1,16 @@
+{
+  "key.categories.walljump": "飞檐走壁",
+  "key.walljump.walljump": "蹬墙跳/墙面附着",
+  "enchantment.walljump.wall_jump": "蹬墙跳",
+  "enchantment.walljump.double_jump": "二段跳",
+  "enchantment.walljump.speed_boost": "速度提升",
+  "enchantment.walljump.wall_jump.desc": "在墙壁之间跳跃",
+  "enchantment.walljump.double_jump.desc": "在空中进行二次跳跃",
+  "enchantment.walljump.speed_boost.desc": "疾跑时提升移动速度",
+  "pack.walljump.enchantments.title": "蹬墙跳附魔",
+  "pack.walljump.enchantments.description": "启用蹬墙跳附魔",
+  
+  "walljump.config.category.general": "常规设置",
+  "walljump.config.category.enchantments": "附魔设置"
+
+}
